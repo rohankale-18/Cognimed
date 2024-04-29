@@ -63,7 +63,7 @@ const Chatsection = ({ toggle }) => {
                                 :
                                 <div className='flex items-end'>
                                     <div className='w-[40px] h-[40px] rounded-full m-2 bg-black rotate-center flex justify-center items-center' >
-                                        <img src="src/assets/Logo.png" alt="" className='w-[40px] h-[40px] ' style={{ animation: 'rotateZoom 2.5s linear infinite' }}/>
+                                        <img src="src\assets\Logo.png" alt="" className='w-[40px] h-[40px] ' style={{ animation: 'rotateZoom 2.5s linear infinite' }}/>
                                     </div>
 
                                     <div key={index} className='break-words w-[60%] px-5 py-4 bg-indigo-300 opacity-80 text-white rounded-tl-3xl rounded-tr-3xl rounded-br-3xl my-1 mr-auto'>{message.text}</div>
@@ -80,7 +80,7 @@ const Chatsection = ({ toggle }) => {
                                 :
                                 <div className='flex items-end'>
                                     <div className='w-[40px] h-[40px] rounded-full m-2 '>
-                                        <img src="src/assets/chatlogo2.png" alt="" className='w-[40px] h-[40px] ' />
+                                        <img src="src\assets\chatlogo2.png" alt="" className='w-[40px] h-[40px] ' />
                                     </div>
                                     <div key={index} className='break-words w-[60%] px-5 py-4 bg-blue-900 text-gray-300 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl my-1 mr-auto'>{message.text}</div>
                                 </div>
