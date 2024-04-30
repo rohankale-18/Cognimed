@@ -21,8 +21,11 @@ const Chatsection = ({ toggle }) => {
     const [messageInput, setMessageInput] = useState('');
 
     const handleMessageSend = () => {
-        if (messageInput.trim() !== '') {
+        if (messageInput.trim() !== '' && !toggle) {
             setMessages([...messages, { text: messageInput.trim(), sent: true }]);
+            setMessageInput('');
+        } else if (messageInput.trim() !== '' && toggle) {
+            setTmsg([...tmsg, { text: messageInput.trim(), sent: true }]);
             setMessageInput('');
         }
     };
